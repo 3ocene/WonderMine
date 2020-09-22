@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Viewer Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+    <div id="app" class="full-height"></div>
+    <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+    <!-- If you use any external libraries, such as jQuery, you must include
+      them as part of your extension.  Twitch does not allow extensions to link
+      to external libraries. -->
+    <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="viewer.js" type="text/javascript"></script>
+    <a id="itemLink" class="pop box">Show Current Build</a>
+    <div id="items" class="pop box" onclick="showItems">
+        <div class="header">
+            <h1>WonderMine</h1>
+        <a class="close" id="itemClose"></a>
+        </div>
+        <div class="scrolly">
+            <div>
+                <h2>Potions</h2>
+                <ul id="potions"></ul>
+            </div>
+            <div>
+                <h2>Curses</h2>
+                <ul id="curses"></ul>
+            </div>
+            <div>
+                <h2>Relics</h2>
+                <ul id="relics"></ul>
+            </div>
+            <div>
+                <h2>Blessings</h2>
+                <ul id="blessings"></ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "wondermine-server",
+  "version": "1.0.0",
+  "description": "Displays a list of relics, blessings, curses and more with helpful links to the wiki for more information.",
+  "main": "handler.js",
+  "scripts": {
+    "dev": "serverless offline"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/3ocene/WonderMine"
+  },
+  "keywords": [
+    "UnderMine",
+    "Twitch",
+    "Serverless"
+  ],
+  "author": "3ocene",
+  "license": "GPL-3.0-only",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9"
+  },
+  "devDependencies": {
+    "serverless-offline": "^6.5.0"
+  }
+}

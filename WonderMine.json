@@ -1,0 +1,81 @@
+{
+  "allowHttpBackend": false,
+  "backendCommand": "npm.cmd run dev",
+  "backendFolderName": "server",
+  "certificateExceptions": [],
+  "extensionViews": [
+    {
+      "channelId": "115574430",
+      "configurationAnchor": "video_overlay",
+      "displayChannelName": "3ocene",
+      "features": {
+        "isBitsEnabled": false,
+        "isChatEnabled": false,
+        "isSubscriptionStatusAvailable": false
+      },
+      "frameSize": {
+        "width": 1280,
+        "height": 720
+      },
+      "id": "1",
+      "isPopout": false,
+      "label": "",
+      "linked": false,
+      "linkedUserId": "",
+      "orientation": "Portrait",
+      "type": "video_overlay",
+      "viewerType": "Logged-In Viewer"
+    }
+  ],
+  "manifest": {
+    "anchor": "video_overlay",
+    "assetUrls": [],
+    "authorName": "3ocene",
+    "bitsEnabled": false,
+    "canInstall": true,
+    "configUrl": "https://localhost:8080/config.html",
+    "configurationLocation": "none",
+    "description": "Don't make your viewers wonder about your build, let them see exactly what you're running in real-time. This extension tracks Blessings, Curses, Relics and more and displays all their details to with helpful links to the UnderMine Wiki for each.",
+    "eulaTosUrl": "",
+    "hasChatSupport": false,
+    "iconUrl": "",
+    "iconUrls": {},
+    "id": "5kgu34ujbt2cqtm8endlhrjbkiuqgi",
+    "installationCount": -42,
+    "liveConfigUrl": "",
+    "name": "WonderMine",
+    "panelHeight": 0,
+    "privacyPolicyUrl": "",
+    "requestIdentityLink": false,
+    "requiredBroadcasterAbilities": [],
+    "screenshotUrls": [],
+    "sku": "",
+    "state": "Testing",
+    "subscriptionsSupportLevel": "none",
+    "summary": "Displays a list of relics, blessings, curses and more with helpful links to the wiki for more information.",
+    "supportEmail": "threeocene@gmail.com",
+    "vendorCode": "",
+    "version": "0.0.1",
+    "viewerSummary": "",
+    "viewerUrl": "",
+    "viewerUrls": {
+      "videoOverlay": "https://localhost:8080/video_overlay.html"
+    },
+    "views": {
+      "videoOverlay": {
+        "viewerUrl": "https://localhost:8080/video_overlay.html",
+        "canLinkExternalContent": false
+      },
+      "config": {
+        "viewerUrl": "https://localhost:8080/config.html",
+        "canLinkExternalContent": false
+      }
+    },
+    "whitelistedConfigUrls": [],
+    "whitelistedPanelUrls": []
+  },
+  "frontendCommand": "",
+  "frontendFolderName": "extension",
+  "name": "WonderMine",
+  "version": 2
+}

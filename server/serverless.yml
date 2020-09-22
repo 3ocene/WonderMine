@@ -1,0 +1,35 @@
+service: WonderMine-Server
+provider:
+  name: aws
+  runtime: nodejs12.x
+plugins:
+- serverless-offline
+# you can add statements to the Lambda function's IAM Role here
+#  iamRoleStatements:
+#    - Effect: "Allow"
+#      Action:
+#        - "s3:ListBucket"
+#      Resource: { "Fn::Join" : ["", ["arn:aws:s3:::", { "Ref" : "ServerlessDeploymentBucket" } ] ]  }
+#    - Effect: "Allow"
+#      Action:
+#        - "s3:PutObject"
+#      Resource:
+#        Fn::Join:
+#          - ""
+#          - - "arn:aws:s3:::"
+#            - "Ref" : "ServerlessDeploymentBucket"
+#            - "/*"
+
+functions:
+  login:
+    handler: handler.login
+    events:
+    - http:
+        path: login
+        method: get
+  loginReturn:
+    handler: handler.loginReturn
+    events:
+    - http:
+        path: login-return
+        method: get

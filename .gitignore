@@ -1,0 +1,17 @@
+# package directories
+node_modules
+jspm_packages
+libs/
+
+# Serverless directories
+.serverless
+
+# Visual Studio
+.vs
+
+# Secrets
+.env
+
+# Builds
+bin/
+obj/

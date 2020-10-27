@@ -58,11 +58,14 @@ public class UnderChat : Mod
         string appdata = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
         string tokenFile = Path.Combine(appdata, "WonderMine", "token.txt");
 
-        using (StreamReader reader = new StreamReader(tokenFile))
+        try
         {
-            pastedToken = reader.ReadToEnd();
-            HandleLogin(pastedToken);
-        }
+            using (StreamReader reader = new StreamReader(tokenFile))
+            {
+                pastedToken = reader.ReadToEnd();
+                HandleLogin(pastedToken);
+            }
+        } catch (Exception) { /* Do nothing (file probably doesn't exist) */}
 
         MenuRenderer.Text = "WonderMine";
         MenuRenderer.SetDefaultSkin()

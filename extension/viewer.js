@@ -115,10 +115,13 @@ $(function() {
     });
 });
 
-let firstBC = true;
+let disabler = null;
 twitch.listen('broadcast', function(target, contentType, message) {
-    if (firstBC) $("#itemLink")[0].style.display = 'block';
-    firstBC = false;
+    $("#itemLink").removeClass('disabled');
+    if (disabler) clearTimeout(disabler);
+    disabler = setTimeout(() => {
+      $("#itemLink").addClass('disabled')
+    }, 60000);
 
     const res = JSON.parse(message);
 

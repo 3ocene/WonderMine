@@ -4,15 +4,12 @@
     <title>Viewer Page</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-<body style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+<body>
     <div id="app" class="full-height"></div>
     <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
-    <!-- If you use any external libraries, such as jQuery, you must include
-      them as part of your extension.  Twitch does not allow extensions to link
-      to external libraries. -->
     <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
     <script src="viewer.js" type="text/javascript"></script>
-    <a id="itemLink" class="pop box">Show Current Build</a>
+    <a id="itemLink" class="pop box disabled"></a>
     <div id="items" class="pop box" onclick="showItems">
         <div class="header">
             <h1>WonderMine</h1>
